@@ -12,7 +12,7 @@ def proba_to_predict(x, threshold=0.5):
     else:
         return 1
 
-df["Tahmin"] = df["Model Olasılık Tahmini"].apply(lambda x: proba_to_predict(x, 0.5))
+df["Estimate"] = df["Model Probability Estimation"].apply(lambda x: proba_to_predict(x, 0.5))
 
 
 
